@@ -1,7 +1,8 @@
 on:
+  pull-request:
   push:
     branches:
-      - main
+      - [main]
 
 jobs:
   build:
