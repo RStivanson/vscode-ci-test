@@ -8,7 +8,7 @@ import * as vscode from 'vscode';
 suite('Extension Test Suite', () => {
 	vscode.window.showInformationMessage('Start all tests.');
 
-	const str = 'Hello world'
+	const str = 'Hello world!'
 
 	test('Contains \'world\'', () => {
 		const idx = str.indexOf('world');
