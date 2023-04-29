@@ -8,7 +8,8 @@ jobs:
   build:
     strategy:
       matrix:
-        os: [macos-latest, ubuntu-latest, windows-latest]
+        os: [macos-latest, ubuntu-latest, windows-latest] # machines to build against
+      fail-fast: false # don't cancel other jobs when one fails
     runs-on: ${{ matrix.os }}
     steps:
     - name: Checkout
